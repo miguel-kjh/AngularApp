@@ -21,6 +21,10 @@ jobs:
     steps:
     # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
     - uses: actions/checkout@v2
+    - name: Install dependencies
+      run: npm install
+    - name: build App
+      run: npm run build
     #- name: test action
     #  uses: colbyhill21/angular-full-ci/@v1.0
     #  with:
