@@ -25,7 +25,7 @@ jobs:
       run: npm install
     - name: build App
       run: npm run build
-    #- name: test action
-    #  uses: colbyhill21/angular-full-ci/@v1.0
-    #  with:
-    #    testcommand: run e2e
+    - name: test action
+      uses: colbyhill21/angular-full-ci/@v1.0
+      with:
+        testcommand: run test:ci
