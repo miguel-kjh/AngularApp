@@ -7,7 +7,7 @@
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "test:ci": "ng test --watch=false --browsers=ChromeHeadlessCustom",
+    "test:ci": "ng test --watch=false",
     "e2e": "ng e2e"
   },
   "private": true,
