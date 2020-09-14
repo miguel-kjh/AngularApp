@@ -24,5 +24,4 @@ jobs:
     - name: test action
       uses: colbyhill21/angular-full-ci/@v1.0
       with:
-        testcommand: run test:ci
-        mocha: true
+        testcommand: run e2e
