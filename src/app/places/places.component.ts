@@ -14,23 +14,30 @@ export class PlacesComponent implements OnInit {
 
   constructor(
     private placeService: PlaceService,
-    private messageService: MessageService
     ) { }
 
   ngOnInit(): void {
     this.getPlaces();
   }
 
-  selectPlace: Place;
-  onSelect(place: Place): void {
-    this.selectPlace = place;
-    this.messageService.add(`Places Component: slected place id id=${place.id}`);
-  }
-
   getPlaces(): void {
     this.placeService.getPlaces().subscribe(
       places => this.places = places
     );
+  }
+
+  add(name: string): void {
+    name = name.trim();
+    if (!name) { return; }
+    this.placeService.addPlace({ name } as Place)
+      .subscribe(place => {
+        this.places.push(place);
+      });
+  }
+
+  delete(place: Place): void {
+    this.places = this.places.filter(h => h !== place);
+    this.placeService.deleteHero(place).subscribe();
   }
 
 }

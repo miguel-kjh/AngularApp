@@ -1,0 +1,11 @@
+<h3>Top Heroes</h3>
+<div class="grid grid-pad">
+  <a *ngFor="let place of places" class="col-1-4" 
+  routerLink="/detail/{{place.id}}">
+    <div class="module hero">
+      <h4>{{place.name}}</h4>
+    </div>
+  </a>
+</div>
+
+<app-place-search></app-place-search>

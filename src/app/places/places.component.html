@@ -1,19 +1,22 @@
-<!--<h2>{{place.name | uppercase }} Details</h2>
-<div>
-    <label>name
-        <input [(ngModel)]="place.name" placeholder="name">
-    </label>
-</div>-->
-
 <h2>My Places</h2>
 
 <ul class="places">
-    <li *ngFor="let place of places" 
-        [class.selected]="place === selectPlace" 
-        (click)="onSelect(place)">
-        <span class="badge">{{ place.id }}</span>
-        {{place.name}}
+    <li *ngFor="let place of places">
+        <a routerLink="/detail/{{place.id}}">
+            <span class="badge">{{ place.id }}</span>
+            {{place.name}}
+        </a>
+        <button class="delete" title="delete hero"
+        (click)="delete(place)">x</button>
     </li>
 </ul>
 
-<app-place-detail [place]="selectPlace"></app-place-detail>
+<div>
+    <label>Place name:
+        <input #placeName />
+    </label>
+    <!-- (click) passes input value to add() and then clears the input -->
+    <button (click)="add(placeName.value); placeName.value=''">
+        add
+    </button>
+</div>
