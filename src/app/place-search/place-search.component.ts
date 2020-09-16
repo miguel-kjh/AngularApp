@@ -7,7 +7,7 @@ import {
  } from 'rxjs/operators';
 
 import { Place } from '../models/place';
-import { PlaceService } from '../place.service';
+import { PlaceService } from '../services/place.service';
 
 @Component({
   selector: 'app-place-search',
