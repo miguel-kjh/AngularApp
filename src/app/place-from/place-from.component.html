@@ -1,0 +1,16 @@
+<div class="form-group">
+    <label for="name">Place Name</label><br>
+    <br>
+    <input #placeName />
+    <br>
+    <label for="lat">Lat</label><br>
+    <br>
+    <input #lat />
+    <br>
+    <label for="log">Log</label>
+    <br>
+    <input #log />
+</div>
+<button (click)="goBack()">go back</button>
+<button (click)="add(placeName.value, +lat.value, +log.value)">Add</button>
+<p>{{ message }}</p>

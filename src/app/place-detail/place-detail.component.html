@@ -5,6 +5,11 @@
         <label>name:
             <input [(ngModel)]="place.name" placeholder="name"/>
         </label>
+        <br>
+        <label>lat: {{ place.lat }}</label>
+        <br>
+        <label>log: {{ place.log }}</label>
+        <br>
     </div>
 </div>
 <button (click)="goBack()">go back</button>

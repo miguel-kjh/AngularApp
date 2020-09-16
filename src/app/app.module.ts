@@ -13,6 +13,7 @@ import { HttpClientInMemoryWebApiModule } from 'angular-in-memory-web-api';
 import { InMemoryDataService } from './services/in-memory-data.service';
 import { PlaceSearchComponent } from './place-search/place-search.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { PlaceFromComponent } from './place-from/place-from.component';
 
 
 
@@ -24,7 +25,8 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
     MessagesComponent,
     DashboardComponent,
     PlaceSearchComponent,
-    PageNotFoundComponent
+    PageNotFoundComponent,
+    PlaceFromComponent
   ],
   imports: [
     BrowserModule,
