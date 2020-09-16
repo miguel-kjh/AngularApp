@@ -10,8 +10,10 @@ import { MessagesComponent } from './messages/messages.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { HttpClientModule } from '@angular/common/http';
 import { HttpClientInMemoryWebApiModule } from 'angular-in-memory-web-api';
-import { InMemoryDataService } from './in-memory-data.service';
+import { InMemoryDataService } from './services/in-memory-data.service';
 import { PlaceSearchComponent } from './place-search/place-search.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { PlaceFromComponent } from './place-from/place-from.component';
 
 
 
@@ -22,7 +24,9 @@ import { PlaceSearchComponent } from './place-search/place-search.component';
     PlaceDetailComponent,
     MessagesComponent,
     DashboardComponent,
-    PlaceSearchComponent
+    PlaceSearchComponent,
+    PageNotFoundComponent,
+    PlaceFromComponent
   ],
   imports: [
     BrowserModule,

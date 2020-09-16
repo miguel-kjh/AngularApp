@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { InMemoryDbService } from 'angular-in-memory-web-api';
-import { Place } from './models/place';
+import { Place } from '../models/place';
 
 @Injectable({
   providedIn: 'root',
@@ -8,11 +8,11 @@ import { Place } from './models/place';
 export class InMemoryDataService implements InMemoryDbService {
   createDb() {
     const places: Place[] = [
-      { id: 1, name: 'Madrid' },
-      { id: 2, name: 'Barcelona' },
-      { id: 3, name: 'Vecindario' },
-      { id: 4, name: 'Brugos' },
-      { id: 5, name: 'Palencia' }
+      { id: 1, name: 'Madrid', lat: 40.439784, log: -3.693193 },
+      { id: 2, name: 'Barcelona', lat: 41.364357, log: 2.139997 },
+      { id: 3, name: 'Vecindario', lat: 27.849983, log: -15.440632 },
+      { id: 4, name: 'Brugos', lat: 42.344518, log: -3.703110 },
+      { id: 5, name: 'Palencia', lat: 42.003713, log: -4.519916 }
     ]
     return {places};
   }

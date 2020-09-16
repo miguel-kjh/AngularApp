@@ -1,4 +1,6 @@
 export interface Place {
     id: number,
-    name: string
+    name: string,
+    lat: number,
+    log: number
 }

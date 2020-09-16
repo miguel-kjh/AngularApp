@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
-import { Place } from "../app/models/place";
-import { PLACES } from "../app/models/mock-places";
+import { Place } from "../models/place";
+import { PLACES } from "../models/mock-places";
 import { Observable, of } from 'rxjs';
 import { MessageService } from './message.service';
 import { HttpClient, HttpHeaders } from '@angular/common/http';

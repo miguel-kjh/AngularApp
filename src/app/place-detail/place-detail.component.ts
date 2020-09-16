@@ -2,7 +2,7 @@ import { Component, OnInit, Input } from '@angular/core';
 import { Place } from "../models/place";
 import { ActivatedRoute } from '@angular/router';
 import { Location } from '@angular/common';
-import { PlaceService } from '../place.service';
+import { PlaceService } from '../services/place.service';
 import { timer } from 'rxjs';
 
 @Component({

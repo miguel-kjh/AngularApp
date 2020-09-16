@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { PlaceService } from "../place.service";
+import { PlaceService } from "../services/place.service";
 import { Place } from '../models/place';
-import { MessageService } from '../message.service';
+import { MessageService } from '../services/message.service';
 
 @Component({
   selector: 'app-places',
